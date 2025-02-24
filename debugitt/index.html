@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+</head>
+<body>
+    <script src="index.js"></script>
+    <div class="form">
+        <div class="head1">
+            <p>Feedback Portal</p>
+        </div>
+
+        <div class="head2">
+            <p>Report Your issue</p>
+        </div>
+        
+            <input type="text" id="name" name="name" class="NAME" placeholder="Enter your name">
+            <input type="text" id="location" name="location" class="LOCATION" placeholder="Enter your location">
+            <input type="text" id="desc" name="desc" class="DESC" placeholder="Describe your issue...">
+            <button class="sub-btn" onclick="issueReport()">SUBMIT</button>
+
+            <div class="head3">
+                <p>Reported Issue</p>
+                <div id="issue-div">
+                </div>
+                <div class="head4">
+                    <p>Urgency of the issue</p>
+                    <button class="btn" onclick="voteCaste('Critical')">Critical</button>
+                    <button class="btn" onclick="voteCaste('Moderate')">Moderate</button> 
+                    <button class="btn" onclick="voteCaste('Low Priority')">Low Priority</button>
+                </div>
+                
+
+</body>
+</html>
